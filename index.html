@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planto | Home Page</title>
+
+    <!-- favicon link  -->
+    <link rel="shortcut icon" href="./assets/logo.svg" type="image/svg">
+
+    <!-- link to google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- style sheet  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="planto">
+
+        <!-- home section  -->
+        <section>
+            <header>
+                <div class="logo">
+                    <img src="./assets/logo.svg" alt="">
+                    <h4>Plantei</h4>
+                </div>
+
+                <ul class="nav_menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                </ul>
+
+                <div class="nav_icon">
+                    <img src="./assets/menu.svg" class="menu" alt="">
+                </div>
+            </header>
+
+        </section>
+
+        <!-- selling section  -->
+        <section class="selling home">
+
+            <div class="search">
+                <input type="text" class="form_group" placeholder="Digite a sua pesquisa">
+                <button onclick="pesquisar()" class="btn">Pesquisar</button>
+                <button onclick="mostrarTodos()" class="btn">Visualizar todas</button>
+            </div>
+
+
+            <div class="title">
+                <img src="./assets/title-border1.svg" alt="">
+
+                <h2>
+                    Meus Registros
+                </h2>
+
+                <img src="./assets/title-border2.svg" alt="">
+            </div>
+
+            <div class="plants">
+                <!-- <div class="plant_items">
+                    <img src="./assets/blur-bg2.svg" alt="">
+
+                    <div class="items_content">
+                        <div class="items_content_img">
+                            <img src="./assets/img1.png" alt="">
+                        </div>
+
+                        <div class="items_content_text">
+                            <h3>
+                                Calathea plant
+                            </h3>
+
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            </p>
+
+                            <div class="items_content_inner">
+                                <span class="span_cont">
+                                    Primavera
+                                </span>
+
+                                <a href="#">
+                                    <div class="info_cont">
+                                        <img src="./assets/info.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!--                 <div class="plant_items">
+                    <img src="./assets/blur-bg2.svg" alt="">
+
+                    <div class="items_content">
+                        <div class="items_content_img">
+                            <img src="./assets/img6.png" alt="">
+                        </div>
+
+                        <div class="items_content_text">
+                            <h3>
+                                Calathea plant
+                            </h3>
+
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            </p>
+
+                            <div class="items_content_inner">
+                                <span class="span_cont">
+                                    Primavera
+                                </span>
+
+                                <a href="#">
+                                    <div class="info_cont">
+                                        <img src="./assets/info.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="plant_items">
+                    <img src="./assets/blur-bg2.svg" alt="">
+
+                    <div class="items_content">
+                        <div class="items_content_img">
+                            <img src="./assets/img2.png" class="items_img_3" alt="">
+                        </div>
+
+                        <div class="items_content_text">
+                            <h3>
+                                Calathea plant
+                            </h3>
+
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            </p>
+
+                            <div class="items_content_inner">
+                                <span class="span_cont">
+                                    Primavera
+                                </span>
+
+                                <a href="#">
+                                    <div class="info_cont">
+                                        <img src="./assets/info.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="plant_items">
+                    <img src="./assets/blur-bg2.svg" alt="">
+
+                    <div class="items_content">
+                        <div class="items_content_img">
+                            <img src="./assets/img3.png" alt="" class="items_img_4">
+                        </div>
+
+                        <div class="items_content_text">
+                            <h3>
+                                Calathea plant
+                            </h3>
+
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            </p>
+
+                            <div class="items_content_inner">
+                                <span class="span_cont">
+                                    Primavera
+                                </span>
+
+                                <a href="#">
+                                    <div class="info_cont">
+                                        <img src="./assets/info.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="plant_items">
+                    <img src="./assets/blur-bg2.svg" alt="">
+
+                    <div class="items_content">
+                        <div class="items_content_img">
+                            <img src="./assets/img4.png" alt="" class="items_img_5">
+                        </div>
+
+                        <div class="items_content_text">
+                            <h3>
+                                Calathea plant
+                            </h3>
+
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            </p>
+
+                            <div class="items_content_inner">
+                                <span class="span_cont">
+                                    Primavera
+                                </span>
+
+                                <a href="#">
+                                    <div class="info_cont">
+                                        <img src="./assets/info.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="plant_items">
+                    <img src="./assets/blur-bg2.svg" alt="">
+
+                    <div class="items_content">
+                        <div class="items_content_img">
+                            <img src="./assets/img5.png" alt="" class="items_img_6">
+                        </div>
+
+                        <div class="items_content_text">
+                            <h3>
+                                Calathea plant
+                            </h3>
+
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            </p>
+
+                            <div class="items_content_inner">
+                                <span class="span_cont">
+                                    Primavera
+                                </span>
+
+                                <a href="#">
+                                    <div class="info_cont">
+                                        <img src="./assets/info.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <section class="footer">
+            <div class="footer_top">
+                <div class="footer_title">
+                    <div class="footer_logo">
+                        <img src="/assets/logo.svg" alt="">
+                        <h3>Plantei</h3>
+                    </div>
+                </div>
+
+                <ul>
+                    <li>
+                        <h2>Quick Link's</h2>
+                    </li>
+                    <li>home</li>
+                    <li>Sobre</li>
+                </ul>
+
+            </div>
+
+            <div class="footer_bot">
+                <div class="social">
+                    <p>fb</p>
+                    <p>tw</p>
+                    <p>li</p>
+                </div>
+                <p>
+                    Plantei 2024 - Todos os direitos Reservados.
+                </p>
+            </div>
+        </section>
+    </footer>
+
+    <script src="./data.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
