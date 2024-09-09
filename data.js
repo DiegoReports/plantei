@@ -2,7 +2,7 @@ const plants = [
   {
     title: 'Monstera Deliciosa',
     description: 'A mais popular de todas as plantas.',
-    category: 'Suculenta',
+    category: 'Aráceas',
     image: './assets/img1.png'
   },
   {
@@ -15,14 +15,14 @@ const plants = [
   {
     title: 'Costela de Adão',
     description: 'Uma especie de planta comum em residencias.',
-    category: 'Flor',
+    category: 'Mostera',
     image: './assets/img3.png'
   },
   {
     title: 'Ave-do-paraíso',
     description:
       'Conhecida como Strelitzia reginae. Ela pertence à categoria das plantas com flores e é muito apreciada por sua aparência tropical e exótica, frequentemente utilizada para decorar interiores 🌿',
-    category: 'Flor',
+    category: 'Liliopsida',
     image: './assets/img4.png'
   },
   {
