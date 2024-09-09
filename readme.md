@@ -26,6 +26,10 @@ O Plantei foi desenvolvido como desafio da Imersão Dev - Google Gemini, da Alur
 - [x] Pesquisa por termos (título, descrição, categoria)
 - [x] Validação para itens ou termos não localizados.
 
+### Uso do Google Gemini
+
+Utilizei [Google Gemini](https://goo.gle/AluraGemini), para gerar a base de dados das informações de cada planta cadastrada bem como as suas respectivas categorias.
+
 ## Como Contribuir
 
 Como Contribuir para o Projeto
