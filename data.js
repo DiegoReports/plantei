@@ -1,99 +1,49 @@
-function pesquisar() {
-  const input = document.querySelector('.form_group')
-  const pesquisa = input.value.trim().toLowerCase()
-  const plantList = document.querySelector('.plants')
-  plantList.innerHTML = '' // Limpa a lista antes de preencher com novos resultados
-
-  // Verifica se há algum termo de pesquisa
-  if (pesquisa === '') {
-    alert('Por favor, digite um termo de pesquisa.')
-    return
+const plants = [
+  {
+    title: 'Monstera Deliciosa',
+    description: 'A mais popular de todas as plantas.',
+    category: 'Suculenta',
+    image: './assets/img1.png'
+  },
+  {
+    title: 'Cacto do deserto',
+    description:
+      'Cactos são lindos, mas ao mesmo tempo requer um cuidado especial.',
+    category: 'Cacto',
+    image: './assets/img2.png'
+  },
+  {
+    title: 'Costela de Adão',
+    description: 'Uma especie de planta comum em residencias.',
+    category: 'Flor',
+    image: './assets/img3.png'
+  },
+  {
+    title: 'Ave-do-paraíso',
+    description:
+      'Conhecida como Strelitzia reginae. Ela pertence à categoria das plantas com flores e é muito apreciada por sua aparência tropical e exótica, frequentemente utilizada para decorar interiores 🌿',
+    category: 'Flor',
+    image: './assets/img4.png'
+  },
+  {
+    title: 'Sansevieria trifasciata',
+    description:
+      'Conhecida como Espada-de-São-Jorge. Ela pertence à categoria das plantas suculentas e é muito apreciada por sua resistência e capacidade de purificar o ar.',
+    category: 'Suculenta',
+    image: './assets/img5.png'
+  },
+  {
+    title: 'Lírio-da-paz (Spathiphyllum)',
+    description:
+      'Muito apreciada por suas qualidades purificadoras de ar e pela beleza de suas folhas e flores brancas.',
+    category: 'Ornamentais',
+    image: './assets/img6.png'
+  },
+  {
+    title: 'Haworthia attenuata',
+    description:
+      'também chamada de zebra cactus devido ao padrão listrado em suas folhas. Ela pertence à categoria das suculentas e é popular como planta de interior por exigir poucos cuidados.',
+    category: 'Cacto',
+    image: './assets/img7.png'
   }
-
-  // Filtra as plantas com base na pesquisa
-  const resultados = plants.filter(plant => {
-    const termoMin = pesquisa.toLowerCase()
-    return (
-      plant.title.toLowerCase().includes(termoMin) ||
-      plant.description.toLowerCase().includes(termoMin) ||
-      plant.category.toLowerCase().includes(termoMin)
-    )
-  })
-
-  // Exibe os resultados na página
-  if (resultados.length === 0) {
-    const nenhumResultado = document.createElement('div')
-    nenhumResultado.textContent = 'Nenhum resultado encontrado.'
-    plantList.appendChild(nenhumResultado)
-  } else {
-    resultados.forEach(plant => {
-      const plantItem = document.createElement('div')
-      plantItem.classList.add('plant_item')
-
-      plantItem.innerHTML = `
-      <div class="plant_items">
-        <img src="./assets/blur-bg2.svg" alt="">
-
-        <div class="items_content">
-            <div class="items_content_img">
-                <img src="${plant.image}" alt="${plant.title}">
-            </div>
-            <div class="items_content_text">
-                <h3>${plant.title}</h3>
-                <p>${plant.description}</p>
-                <div class="items_content_inner">
-                    <span class="span_cont">
-                        ${plant.category}
-                    </span>
-
-                    <a href="#">
-                        <div class="info_cont">
-                            <img src="./assets/info.svg" alt="">
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-      </div>
-      `
-      plantList.appendChild(plantItem)
-    })
-  }
-}
-
-function mostrarTodos() {
-  const plantList = document.querySelector('.plants')
-  plantList.innerHTML = ''
-
-  plants.forEach(plant => {
-    const plantItem = document.createElement('div')
-    plantItem.classList.add('plant_item')
-    plantItem.innerHTML = `
-      <div class="plant_items">
-        <img src="./assets/blur-bg2.svg" alt="">
-
-        <div class="items_content">
-            <div class="items_content_img">
-                <img src="${plant.image}" alt="${plant.title}">
-            </div>
-            <div class="items_content_text">
-                <h3>${plant.title}</h3>
-                <p>${plant.description}</p>
-                <div class="items_content_inner">
-                    <span class="span_cont">
-                        ${plant.category}
-                    </span>
-
-                    <a href="#">
-                        <div class="info_cont">
-                            <img src="./assets/info.svg" alt="">
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-      </div>
-      `
-    plantList.appendChild(plantItem)
-  })
-}
+]
