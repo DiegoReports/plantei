@@ -573,9 +573,7 @@ footer ul li:not(:first-child){
     .plant_items > img{
         max-width: 300px;
     }
-    .selling .items_content_inner{
-        padding-right: 3rem;
-    }
+
     .plants{
         row-gap: 4rem;
     }
@@ -595,7 +593,7 @@ footer ul li:not(:first-child){
         left: 5%;
     }
     .title > img:last-child{
-        left: 5%;
+        right: 25px;
     }
 }
 
