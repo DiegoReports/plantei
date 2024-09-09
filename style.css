@@ -43,6 +43,11 @@
 
 ::placeholder{
     color: var(--body-color);
+    font-family: "Lora", serif;
+}
+
+input:focus-visible {
+    border: 1px solid var(--secondary-color);
 }
 
 body{
